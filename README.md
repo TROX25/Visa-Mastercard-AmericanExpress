@@ -1,6 +1,6 @@
 # Visa-Mastercard-AmericanExpress
 
-This is a simple Python program that validates credit card numbers and identifies the type of card based on standard number patterns and length.
+This is a simple C program that validates credit card numbers and identifies the type of card based on known number patterns and Luhn’s Algorithm.
 
 Supported card types:
 
@@ -10,12 +10,15 @@ Supported card types:
 
 ## 🔍 How It Works
 
-- The program prompts the user to input a credit card number.
-- It checks:
-  - If the number passes **Luhn’s Algorithm**
-  - The **length** and **starting digits** to determine the card type
-- Prints the result: `VISA`, `MASTERCARD`, `AMEX`, or `INVALID`
+- Prompts the user to enter a credit card number.
+- Applies **Luhn’s Algorithm** to validate the number.
+- Checks the **length** and **starting digits** to determine the card issuer.
+- Prints one of the following results:
+  - `VISA`
+  - `MASTERCARD`
+  - `AMEX`
+  - `INVALID`
 
 ## 💻 Example
-Number: 4003600000000014
-VISA
+Number: 378282246310005
+AMEX
